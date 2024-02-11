@@ -1,0 +1,8 @@
+query info($address: String!) {
+ sendAsserts(
+  where: { from: $address,destinationChainId:"1442",blockTimestamp_gt:"1703808000" }
+ ) {
+    id,
+   destinationChainId
+  }
+}
